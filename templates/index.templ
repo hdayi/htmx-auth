@@ -13,8 +13,31 @@ templ Index() {
 				href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
 			/>
 		</head>
-		<body class="bg-gray-500">
-			<p class="text-blue-600 text-9xl">Merhaba dunya</p>
+		<body class="bg-gray-500 flex justify-center items-center">
+			<div id="loginSection" class="card w-96 bg-base-100 shadow-xl">
+				<div class="card-body">
+					<h2 class="card-title">GİRİŞ YAPINIZ</h2>
+					<form id="loginForm" hx-post="/login" hx-target="#loginSection" hx-swap="outerHTML">
+						<input
+							id="username"
+							name="username"
+							type="text"
+							placeholder="Kullanıcı Adı"
+							class="input input-bordered w-full max-w-xs"
+						/>
+						<input
+							id="password"
+							name="password"
+							type="password"
+							placeholder="Şifre"
+							class="input input-bordered w-full max-w-xs"
+						/>
+						<div class="card-actions justify-end">
+							<button type="submit" class="btn btn-primary">GİRİŞ</button>
+						</div>
+					</form>
+				</div>
+			</div>
 		</body>
 	</html>
 }
