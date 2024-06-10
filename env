@@ -1,0 +1,5 @@
+KULLANICI="username"
+PASSWORD="password."
+DB="DBNAME"
+HOST="DBHOST"
+WEBPORT="8080"
